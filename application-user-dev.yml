@@ -8,11 +8,5 @@ spring:
     url: jdbc:mysql://localhost:3306/aigou_test
     username: root
     password: admin
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:7001/eureka
-  instance:
-    prefer-ip-address: true #访问地址显示IP
 mybatis:
   type-aliases-package: cn.itsource.aigou.domain,cn.itsource.aigou.query
