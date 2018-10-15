@@ -1,0 +1,18 @@
+server:
+  port: 9529
+spring:
+  application:
+    name: MICROSERVICE-ZUUL-GATEWAY
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-7001.com:7001/eureka,http://eureka-7002.com:7002/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: false
+zuul:
+  routes:
+    myUser.serviceId: microservice-user
+    myUser.path: /myUser/**
+  ignored-services: "*" #一个一个配置microservice-user
+  prefix: /services     #加入前缀
