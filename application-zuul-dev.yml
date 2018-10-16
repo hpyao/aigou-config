@@ -8,4 +8,5 @@ zuul:
     product.serviceId: aigou-product
     product.path: /product/**
   ignored-services: "*"
-  prefix: services
+  prefix: /services
+  strip-prefix: false
