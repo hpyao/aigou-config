@@ -2,7 +2,7 @@ server:
   port: 9527
 spring:
   application:
-    name: MICROSERVICE-ZUUL-GATEWAY
+    name: AIGOU-ZUUL-GATEWAY
 eureka:
   client:
     service-url:
@@ -12,7 +12,5 @@ eureka:
     prefer-ip-address: false
 zuul:
   routes:
-    product.serviceId: aigou-product
-    product.path: /product/**
-  ignored-services: "*" #一个一个配置microservice-user
-  prefix: /services     #加入前缀
+    user.serviceId: aigou-user
+    user.path: /user/**
