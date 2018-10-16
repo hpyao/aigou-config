@@ -5,5 +5,5 @@ spring:
     name: AIGOU-ZUUL-GATEWAY
 zuul:
   routes:
-    myUser.serviceId: aigou-user
-    myUser.path: /myUser/**
+    product.serviceId: aigou-product
+    product.path: /product/**
