@@ -7,3 +7,5 @@ zuul:
   routes:
     product.serviceId: aigou-product
     product.path: /product/**
+  ignored-services: "*"
+  prefix: services
