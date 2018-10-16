@@ -3,14 +3,7 @@ server:
 spring:
   application:
     name: AIGOU-ZUUL-GATEWAY
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:7001/eureka
-  instance:
-    instance-id: gateway-9527.com
-    prefer-ip-address: false
 zuul:
   routes:
-    user.serviceId: aigou-user
-    user.path: /user/**
+    myUser.serviceId: aigou-user
+    myUser.path: /myUser/**
