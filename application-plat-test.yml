@@ -1,0 +1,10 @@
+server:
+  port: 9002
+feign:
+  hystrix:
+    enabled: true
+spring:
+    mvc:
+      view:
+        prefix: /WEB-INF/views/
+        suffix: .jsp
