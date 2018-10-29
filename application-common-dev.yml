@@ -4,7 +4,7 @@ spring:
   data:
     elasticsearch:
       cluster-nodes: 127.0.0.1:9300
-      cluster-name: yhptest
+      cluster-name: elasticsearch
   application:
     name: AIGOU-COMMON
   cache:
