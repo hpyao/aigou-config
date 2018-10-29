@@ -3,13 +3,17 @@ server:
 spring:
   data:
     elasticsearch:
-      cluster-nodes: 127.0.0.1:9300
-      cluster-name: elasticsearch
+        #cluster-name: #默认为elasticsearch
+        cluster-nodes: 127.0.0.1:9300 #配置es节点信息，逗号分隔，如果没有指定，则启动ClientNode（9200端口是http查询使用的。9300集群使用。这里使用9300.）
+        properties:
+            path:
+              logs: ./elasticsearch/log #elasticsearch日志存储目录
+              data: ./elasticsearch/data #elasticsearch数据存储目录
   application:
     name: AIGOU-COMMON
   cache:
     type: REDIS
-    cache-names: redis_cache , ehcache #缓存的名字
+    cache-names: redis_cache #缓存的名字
     redis:
      time-to-live: 60000  #很重要，缓存的有效时间，以便缓存的过期（单位为毫秒）
   redis:
