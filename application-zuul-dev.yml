@@ -5,8 +5,12 @@ spring:
     name: AIGOU-ZUUL-GATEWAY
 zuul:
   routes:
-    product.serviceId: aigou-product
-    product.path: /product/**
+    product: 
+        serviceId: aigou-product
+        path: /product/**
+    common: 
+        serviceId: aigou-common
+        path: /common/**
   ignored-services: "*"
   #prefix: /services
   #strip-prefix: false
