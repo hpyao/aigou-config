@@ -11,6 +11,9 @@ zuul:
     common: 
         serviceId: aigou-common
         path: /common/**
+    user: 
+        serviceId: aigou-user
+        path: /user/**
   ignored-services: "*"
   #prefix: /services
   #strip-prefix: false
