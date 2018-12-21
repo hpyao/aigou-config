@@ -2,7 +2,7 @@ server:
   port: 8003
 spring:
   application:
-    name: AIGOU-PRODUCT
+    name: AIGOU-USER
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/aigou_user
